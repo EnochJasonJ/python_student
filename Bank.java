@@ -1,35 +1,5 @@
 import java.util.Scanner;
 
-class BankAccount{
-    private String name;
-    private float Balance;
-    BankAccount(){}
-    BankAccount(String name, float Balance){
-        this.name = name;
-        this.Balance = Balance;
-    }
-    void getname(){
-        System.out.print("Name: "+name);
-    }
-    void getbalance(){
-        System.out.print("Balance: $"+Balance);
-    }
-    void deposit(float amount){
-        Balance += amount;
-        System.out.println("$"+amount+" Deposited Successfully!");
-        System.out.print("Balance: $"+Balance);
-    }
-    void withdraw(float amount){
-        if (amount < Balance){
-            Balance -= amount;
-            System.out.println("$"+amount+" Withdrawed Successfully!");
-            System.out.print("Balance: $"+Balance);
-        }
-        else{
-            System.out.println("Insufficient Balance!");
-        }
-    }
-}
 public class Bank{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -81,6 +51,36 @@ public class Bank{
                     System.out.println("An error has occured! Cannot process your request!");
                 }
             }
+        }
+    }
+}
+class BankAccount{
+    private String name;
+    private float Balance;
+    BankAccount(){}
+    BankAccount(String name, float Balance){
+        this.name = name;
+        this.Balance = Balance;
+    }
+    void getname(){
+        System.out.print("Name: "+name);
+    }
+    void getbalance(){
+        System.out.print("Balance: $"+Balance);
+    }
+    void deposit(float amount){
+        Balance += amount;
+        System.out.println("$"+amount+" Deposited Successfully!");
+        System.out.print("Balance: $"+Balance);
+    }
+    void withdraw(float amount){
+        if (amount < Balance){
+            Balance -= amount;
+            System.out.println("$"+amount+" Withdrawed Successfully!");
+            System.out.print("Balance: $"+Balance);
+        }
+        else{
+            System.out.println("Insufficient Balance!");
         }
     }
 }
