@@ -1,0 +1,52 @@
+Scenario: Imagine you are managing the performance ratings for a team of employees. The ratings are recorded in an array where each element represents the rating of an employee. You need to find the second-highest distinct rating in the team. If the second highest distinct rating does not exist, return -1. This helps in identifying the top performers in the team.
+Task: Write a function to find the second-highest distinct rating from an array of employee ratings. If the second highest rating doesn’t exist, return -1.
+Sample Test Cases with Detailed Output Explanations
+
+Test Case 1:
+    Input: ratings = [12, 35, 1, 10, 34, 1]
+    Output: 34
+    
+Explanation:
+
+    •The largest rating in the array is 35.
+    •The second largest distinct rating is 34.
+    
+Test Case 2:
+
+    Input: ratings = [10, 10]
+    Output: -1
+    
+Explanation:
+
+    •The largest rating in the array is 10.
+    •There is no second-largest distinct rating, so the output is -1.
+    
+Test Case 3:
+
+    Input: ratings = [25, 45, 25, 35, 45, 55, 60, 55]
+    Output: 55
+    
+Explanation:
+
+    •The largest rating in the array is 60.
+    •The second largest distinct rating is 55.
+    
+Test Case 4:
+
+    Input: ratings = [5, 4, 3, 2, 1]
+    Output: 4
+    
+Explanation:
+
+    •The largest rating in the array is 5.
+    •The second largest distinct rating is 4.
+    
+Test Case 5:
+
+    Input: ratings = [100]
+    Output: -1
+    
+Explanation:
+
+    •The array contains only one element.
+    •There is no second-largest distinct rating, so the output is -1.
