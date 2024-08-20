@@ -11,3 +11,4 @@ while index < len(Testcase1):
     index += 1
 
 print(Testcase1)
+print("4 students are absent!")
